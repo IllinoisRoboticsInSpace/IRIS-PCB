@@ -1,0 +1,4 @@
+[submodule "Libraries/KiCad Symbol Libraries"]
+	path = Libraries/KiCad Symbol Libraries
+	url = https://github.com/byronhopps/KiCad_Symbol_Libraries.git
+	branch = master
