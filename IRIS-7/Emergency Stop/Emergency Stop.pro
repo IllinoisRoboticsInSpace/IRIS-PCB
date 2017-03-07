@@ -1,4 +1,4 @@
-update=3/7/2017 12:54:27 AM
+update=3/7/2017 1:15:44 AM
 version=1
 last_client=kicad
 [pcbnew]
@@ -33,3 +33,4 @@ LibName1=power
 LibName2=Passives
 LibName3=conn
 LibName4=TI
+LibName5=Switch
