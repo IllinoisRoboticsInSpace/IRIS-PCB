@@ -72,11 +72,7 @@ F 3 "" H 2500 3450 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	3150 2700 3300 2700
-Wire Wire Line
-	3300 2700 3650 2700
-Wire Wire Line
-	3650 2700 4800 2700
+	3150 2700 4800 2700
 Wire Wire Line
 	4800 3100 4700 3100
 Wire Wire Line
@@ -106,11 +102,7 @@ $EndComp
 Wire Wire Line
 	5700 2700 5500 2700
 Wire Wire Line
-	5500 2900 5750 2900
-Wire Wire Line
-	5750 2900 6000 2900
-Wire Wire Line
-	6000 2900 6100 2900
+	5500 2900 6100 2900
 Wire Wire Line
 	5900 2700 6000 2700
 Wire Wire Line
@@ -162,22 +154,12 @@ F 3 "" V 6700 3350 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	6500 2900 6700 2900
-Wire Wire Line
-	6700 2900 7150 2900
-Wire Wire Line
-	7150 2900 7550 2900
-Wire Wire Line
-	7550 2900 8000 2900
-Wire Wire Line
-	8000 2900 8300 2900
+	6500 2900 8300 2900
 Wire Wire Line
 	6700 2900 6700 2950
 Connection ~ 6700 2900
 Wire Wire Line
-	6700 3150 6700 3200
-Wire Wire Line
-	6700 3200 6700 3250
+	6700 3150 6700 3250
 $Comp
 L GND #PWR03
 U 1 1 58BE679C
@@ -313,9 +295,7 @@ $EndComp
 Wire Wire Line
 	3650 3300 3650 3450
 Wire Wire Line
-	3650 3000 3650 3050
-Wire Wire Line
-	3650 3050 3650 3100
+	3650 3000 3650 3100
 Wire Wire Line
 	3650 2800 3650 2700
 Connection ~ 3650 2700
@@ -635,47 +615,25 @@ Emergency Stop Control Logic
 Text Notes 1500 5700 0    60   ~ 0
 Enables IRIS-7 when the Estop is closed\nand the power button has been pressed
 Wire Wire Line
-	1500 6300 1500 6400
+	1500 6300 1500 6450
 Wire Wire Line
-	1500 6400 1500 6450
+	3300 6300 3300 6450
 Wire Wire Line
-	3300 6300 3300 6350
-Wire Wire Line
-	3300 6350 3300 6400
-Wire Wire Line
-	3300 6400 3300 6450
-Wire Wire Line
-	1650 6650 1750 6650
-Wire Wire Line
-	1750 6650 2050 6650
-Wire Wire Line
-	2050 6650 2350 6650
-Wire Wire Line
-	2350 6650 2400 6650
+	1650 6650 2400 6650
 Wire Wire Line
 	2400 6650 2650 6400
 Wire Wire Line
 	2650 6400 3300 6400
 Connection ~ 3300 6400
 Wire Wire Line
-	2650 6650 2700 6650
-Wire Wire Line
-	2700 6650 3000 6650
-Wire Wire Line
-	3000 6650 3150 6650
+	2650 6650 3150 6650
 Wire Wire Line
 	2400 6400 2650 6650
 Wire Wire Line
 	2400 6400 1500 6400
 Connection ~ 1500 6400
 Wire Wire Line
-	1300 6050 1500 6050
-Wire Wire Line
-	1500 6050 3300 6050
-Wire Wire Line
-	3300 6050 3400 6050
-Wire Wire Line
-	3400 6050 3500 6050
+	1300 6050 3500 6050
 Wire Wire Line
 	3300 6050 3300 6100
 Wire Wire Line
@@ -707,15 +665,7 @@ Wire Wire Line
 	3600 6350 3300 6350
 Connection ~ 3300 6350
 Wire Wire Line
-	3800 6050 3900 6050
-Wire Wire Line
-	3900 6050 4000 6050
-Wire Wire Line
-	4000 6050 4450 6050
-Wire Wire Line
-	4450 6050 4900 6050
-Wire Wire Line
-	4900 6050 5300 6050
+	3800 6050 5300 6050
 Wire Notes Line
 	1950 7100 1950 7150
 Wire Notes Line
