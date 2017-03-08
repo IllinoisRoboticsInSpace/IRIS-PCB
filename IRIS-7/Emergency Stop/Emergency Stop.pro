@@ -1,4 +1,4 @@
-update=3/7/2017 1:15:44 AM
+update=3/7/2017 7:46:53 PM
 version=1
 last_client=kicad
 [pcbnew]
@@ -27,10 +27,12 @@ NetIExt=net
 version=1
 [eeschema]
 version=1
-LibDir=../../Libraries/KiCad Symbol Libraries
+LibDir=../../Libraries/KiCad Symbol Libraries;Symbol Libraries
 [eeschema/libraries]
 LibName1=power
 LibName2=Passives
 LibName3=conn
 LibName4=TI
 LibName5=Switch
+LibName6=Transistor
+LibName7=Symbol Libraries/Estop_Lib
