@@ -1,4 +1,4 @@
-update=3/7/2017 7:46:53 PM
+update=3/15/2017 7:51:03 PM
 version=1
 last_client=kicad
 [pcbnew]
@@ -36,3 +36,12 @@ LibName4=TI
 LibName5=Switch
 LibName6=Transistor
 LibName7=Symbol Libraries/Estop_Lib
+LibName8=40xx Series
+LibName9=7400 Series
+LibName10=Connector
+LibName11=Generic Symbols
+LibName12=Linear Regulator
+LibName13=Linear Technology
+LibName14=LMxxx
+LibName15=microchip
+LibName16=ON Semiconductor
