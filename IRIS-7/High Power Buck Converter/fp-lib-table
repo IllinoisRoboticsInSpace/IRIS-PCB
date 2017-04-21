@@ -1,0 +1,3 @@
+(fp_lib_table
+  (lib (name Buck_Converter)(type KiCad)(uri ${KIPRJMOD}/Buck_Converter.pretty)(options "")(descr ""))
+)
