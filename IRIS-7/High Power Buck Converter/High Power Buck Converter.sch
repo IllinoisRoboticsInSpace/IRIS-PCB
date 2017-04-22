@@ -4,6 +4,7 @@ LIBS:conn
 LIBS:Passives
 LIBS:TI
 LIBS:Transistor
+LIBS:Buck_Converter
 LIBS:High Power Buck Converter-cache
 EELAYER 25 0
 EELAYER END
@@ -108,7 +109,7 @@ F 3 "" H 4000 3500 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L D_Schottky_2Anode D1
+L D_Schottky_AKA D1
 U 1 1 58B6402B
 P 5150 3700
 F 0 "D1" V 5100 3600 50  0000 R CNN
@@ -136,7 +137,7 @@ U 1 1 58B6403A
 P 5150 4050
 F 0 "R6" H 5225 4100 50  0000 L CNN
 F 1 "10m" H 5225 4000 50  0000 L CNN
-F 2 "Resistors_SMD:R_0805" V 5150 4050 50  0001 C CNN
+F 2 "Resistors_SMD:R_2010" V 5150 4050 50  0001 C CNN
 F 3 "" V 5150 4050 50  0000 C CNN
 	1    5150 4050
 	1    0    0    -1  
@@ -820,7 +821,7 @@ U 1 1 58EC5D48
 P 2500 3550
 F 0 "JP1" H 2500 3630 50  0000 C CNN
 F 1 "JP_NC" H 2510 3490 50  0001 C CNN
-F 2 "Pin_Headers:Pin_Header_Straight_2x01_Pitch2.54mm" H 2500 3550 50  0001 C CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x02_Pitch2.54mm" H 2500 3550 50  0001 C CNN
 F 3 "" H 2500 3550 50  0000 C CNN
 	1    2500 3550
 	1    0    0    -1  
@@ -994,4 +995,6 @@ F 3 "" H 8000 3650 50  0000 C CNN
 $EndComp
 Connection ~ 7650 3400
 Connection ~ 8000 3400
+Text Notes 5400 2950 0    60   ~ 0
+TODO:\nUpdate diode footprint to remove extra pin 2
 $EndSCHEMATC

@@ -1,4 +1,4 @@
-update=4/13/2017 12:13:47 AM
+update=4/22/2017 11:46:10 AM
 version=1
 last_client=kicad
 [pcbnew]
@@ -34,3 +34,4 @@ LibName2=conn
 LibName3=Passives
 LibName4=TI
 LibName5=Transistor
+LibName6=Schematic Libraries/Buck_Converter
