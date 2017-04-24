@@ -441,8 +441,6 @@ Wire Wire Line
 Wire Wire Line
 	5000 4100 5000 4200
 Wire Wire Line
-	5000 4200 5150 4200
-Wire Wire Line
 	3950 5050 3950 5350
 Wire Wire Line
 	3950 5350 4150 5350
@@ -516,7 +514,7 @@ Connection ~ 4950 3400
 Wire Wire Line
 	4950 2700 4950 2750
 Wire Wire Line
-	1400 2700 4950 2700
+	1600 2700 4950 2700
 Wire Wire Line
 	4650 2750 4650 2700
 Connection ~ 4650 2700
@@ -703,12 +701,12 @@ Connection ~ 6250 3400
 $Comp
 L CONN_01X02 P1
 U 1 1 58EC4787
-P 1200 2750
-F 0 "P1" H 1200 2900 50  0000 C CNN
-F 1 "ST-2.54" V 1300 2750 50  0000 C CNN
-F 2 "Terminal_Blocks:TerminalBlock_Pheonix_MPT-2.54mm_2pol" H 1200 2750 50  0001 C CNN
-F 3 "" H 1200 2750 50  0000 C CNN
-	1    1200 2750
+P 750 2750
+F 0 "P1" H 750 2900 50  0000 C CNN
+F 1 "ST-2.54" V 850 2750 50  0000 C CNN
+F 2 "Terminal_Blocks:TerminalBlock_Pheonix_MKDS1.5-2pol" H 750 2750 50  0001 C CNN
+F 3 "" H 750 2750 50  0000 C CNN
+	1    750  2750
 	-1   0    0    -1  
 $EndComp
 $Comp
@@ -830,30 +828,30 @@ Wire Wire Line
 	2400 3550 2350 3550
 Wire Wire Line
 	2350 3550 2350 3050
-Text Label 1450 2700 0    60   ~ 0
+Text Label 1800 2700 0    60   ~ 0
 Vin
 $Comp
 L GND #PWR019
 U 1 1 58EC76BE
-P 1450 2900
-F 0 "#PWR019" H 1450 2650 50  0001 C CNN
-F 1 "GND" H 1450 2750 50  0000 C CNN
-F 2 "" H 1450 2900 50  0000 C CNN
-F 3 "" H 1450 2900 50  0000 C CNN
-	1    1450 2900
+P 1000 2900
+F 0 "#PWR019" H 1000 2650 50  0001 C CNN
+F 1 "GND" H 1000 2750 50  0000 C CNN
+F 2 "" H 1000 2900 50  0000 C CNN
+F 3 "" H 1000 2900 50  0000 C CNN
+	1    1000 2900
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	1450 2900 1450 2800
+	1000 2900 1000 2800
 Wire Wire Line
-	1450 2800 1400 2800
+	1000 2800 950  2800
 $Comp
 L CONN_01X02 P2
 U 1 1 58EC7FFA
 P 9300 3750
 F 0 "P2" H 9300 3900 50  0000 C CNN
 F 1 "ST-2.54" V 9400 3750 50  0000 C CNN
-F 2 "Terminal_Blocks:TerminalBlock_Pheonix_MPT-2.54mm_2pol" H 9300 3750 50  0001 C CNN
+F 2 "Terminal_Blocks:TerminalBlock_Pheonix_MKDS1.5-2pol" H 9300 3750 50  0001 C CNN
 F 3 "" H 9300 3750 50  0000 C CNN
 	1    9300 3750
 	1    0    0    -1  
@@ -864,7 +862,7 @@ U 1 1 58EC83A4
 P 9800 3750
 F 0 "P3" H 9800 3900 50  0000 C CNN
 F 1 "ST-2.54" V 9900 3750 50  0000 C CNN
-F 2 "Terminal_Blocks:TerminalBlock_Pheonix_MPT-2.54mm_2pol" H 9800 3750 50  0001 C CNN
+F 2 "Terminal_Blocks:TerminalBlock_Pheonix_MKDS1.5-2pol" H 9800 3750 50  0001 C CNN
 F 3 "" H 9800 3750 50  0000 C CNN
 	1    9800 3750
 	1    0    0    -1  
@@ -915,7 +913,7 @@ U 1 1 58EC94C4
 P 10300 3750
 F 0 "P4" H 10300 3900 50  0000 C CNN
 F 1 "ST-2.54" V 10400 3750 50  0000 C CNN
-F 2 "Terminal_Blocks:TerminalBlock_Pheonix_MPT-2.54mm_2pol" H 10300 3750 50  0001 C CNN
+F 2 "Terminal_Blocks:TerminalBlock_Pheonix_MKDS1.5-2pol" H 10300 3750 50  0001 C CNN
 F 3 "" H 10300 3750 50  0000 C CNN
 	1    10300 3750
 	1    0    0    -1  
@@ -995,6 +993,21 @@ F 3 "" H 8000 3650 50  0000 C CNN
 $EndComp
 Connection ~ 7650 3400
 Connection ~ 8000 3400
-Text Notes 5400 2950 0    60   ~ 0
-TODO:\nUpdate diode footprint to remove extra pin 2
+$Comp
+L F F1
+U 1 1 58FC1075
+P 1400 2700
+F 0 "F1" H 1300 2750 60  0000 C CNN
+F 1 "3.5A" H 1450 2650 60  0000 L CNN
+F 2 "Fuse_Holders_and_Fuses:Fuseholder5x20_horiz_open_Schurter_0031_8201" H 1400 2700 60  0001 C CNN
+F 3 "" H 1400 2700 60  0000 C CNN
+	1    1400 2700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1200 2700 950  2700
+Text Label 950  2700 0    60   ~ 0
+Vbatt
+Text Notes 1450 2350 0    60   ~ 0
+TODO:\n- Determine fuse value
 $EndSCHEMATC
