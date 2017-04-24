@@ -338,7 +338,7 @@ FB
 Text Label 3950 5300 1    50   ~ 0
 COMP
 Text Label 4000 4200 0    50   ~ 0
-CS
+CS_P
 Text Label 4550 3400 0    50   ~ 0
 SW
 Text Label 4400 3100 0    50   ~ 0
@@ -422,7 +422,7 @@ Connection ~ 4000 3850
 Wire Wire Line
 	5100 3850 5100 3900
 Wire Wire Line
-	5000 3900 5200 3900
+	4950 3900 5200 3900
 Wire Wire Line
 	5150 3900 5150 3950
 Wire Wire Line
@@ -1010,4 +1010,70 @@ Text Label 950  2700 0    60   ~ 0
 Vbatt
 Text Notes 1450 2350 0    60   ~ 0
 TODO:\n- Determine fuse value
+Text Label 4000 4300 0    50   ~ 0
+CS_N
+$Comp
+L TEST_1P J1
+U 1 1 58FEBD32
+P 5000 4200
+F 0 "J1" H 5000 4470 50  0000 C CNN
+F 1 "GND" H 5000 4400 50  0000 C CNN
+F 2 "Buck_Converter:SMD_0.3" H 5200 4200 50  0001 C CNN
+F 3 "" H 5200 4200 50  0001 C CNN
+	1    5000 4200
+	0    -1   -1   0   
+$EndComp
+$Comp
+L TEST_1P J2
+U 1 1 58FECFB2
+P 4950 3900
+F 0 "J2" H 4950 4170 50  0000 C CNN
+F 1 "CS_P" H 4950 4100 50  0000 C CNN
+F 2 "Buck_Converter:SMD_0.3" H 5150 3900 50  0001 C CNN
+F 3 "" H 5150 3900 50  0001 C CNN
+	1    4950 3900
+	0    -1   -1   0   
+$EndComp
+Connection ~ 5000 3900
+$Comp
+L R_Small R11
+U 1 1 58FEF7F4
+P 9650 4650
+F 0 "R11" H 9725 4700 50  0000 L CNN
+F 1 "34.8k" H 9725 4600 50  0000 L CNN
+F 2 "Resistors_SMD:R_0805" V 9650 4650 50  0001 C CNN
+F 3 "" V 9650 4650 50  0000 C CNN
+	1    9650 4650
+	1    0    0    -1  
+$EndComp
+$Comp
+L Led_Small D2
+U 1 1 58FEFBCC
+P 9650 4950
+F 0 "D2" V 9700 4850 50  0000 R CNN
+F 1 "Blue" V 9600 4850 50  0000 R CNN
+F 2 "LEDs:LED_0805" V 9650 4950 50  0001 C CNN
+F 3 "" V 9650 4950 50  0000 C CNN
+	1    9650 4950
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	9650 4750 9650 4850
+$Comp
+L GND #PWR025
+U 1 1 58FF0287
+P 9650 5050
+F 0 "#PWR025" H 9650 4800 50  0001 C CNN
+F 1 "GND" H 9650 4900 50  0000 C CNN
+F 2 "" H 9650 5050 50  0001 C CNN
+F 3 "" H 9650 5050 50  0001 C CNN
+	1    9650 5050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9650 4550 9650 4450
+Wire Wire Line
+	9650 4450 9250 4450
+Text Label 9250 4450 0    60   ~ 0
+Vout
 $EndSCHEMATC

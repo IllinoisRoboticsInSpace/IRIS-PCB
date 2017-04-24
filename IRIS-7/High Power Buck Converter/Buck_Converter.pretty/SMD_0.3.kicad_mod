@@ -1,0 +1,10 @@
+(module SMD_0.3 (layer F.Cu) (tedit 58FE6B58)
+  (attr virtual)
+  (fp_text reference REF** (at 0 -1) (layer F.SilkS) hide
+    (effects (font (size 1 1) (thickness 0.15)))
+  )
+  (fp_text value SMD_0.3 (at 0 -0.5) (layer F.Fab) hide
+    (effects (font (size 1 1) (thickness 0.15)))
+  )
+  (pad 1 smd circle (at 0 0) (size 0.3 0.3) (layers F.Cu))
+)
